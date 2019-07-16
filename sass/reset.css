@@ -1,0 +1,17 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, 
+a, abbr, address, big, cite, em, img, small, strong, i, dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, fieldset, figure, figcaption, footer, header, nav, section, time, audio, video {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, nav, section,main {
+    display: block;
+}
+ol,ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+body { font:12px/1.6; color: #888; }
+.clear:after { content:"";display:block;clear:both }
+button,fieldset {border: none;background: none;}
