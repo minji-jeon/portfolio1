@@ -1,6 +1,14 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,500|Noto+Sans+KR|Source+Sans+Pro:900&display=swap');
 
+@mixin Montserrat($size,$color) {
+	font-family: 'Montserrat', sans-serif;letter-spacing: 1px;font-size: $size;color: $color;
+}
+@mixin Source($size,$color) {
+	font-family: 'Source Sans Pro', sans-serif;;letter-spacing: 1px;font-size: $size;color: $color;
+}
+
+
 //common
 body {font-family: 'Noto Sans KR', sans-serif;font-size: 15px;letter-spacing: -1px;}
 #skip-nav {position: fixed; background: #000;left: 20px;top: -40px;}
@@ -16,10 +24,41 @@ header {border-top: 2px solid #890010; height: 48px; background:#181817;position
 	article.gnb a.menu_open {position: absolute;left: 14px;top: 14px;color: #fff;
 		&:after,&:before {content: '';height: 2px;width: 25px;background: #fff;display: block;transition: all 0.3s;}
 		span {height: 2px;width: 25px;background: #fff;overflow: hidden;display: block;margin: 7px 0;}
+		&.on:after {width: 30px;transform: rotate(-45deg) translate(5px,-8px);}
+		&.on:before {width: 30px;transform: rotate(45deg) translate(4px,8px);}
+		&.on span {opacity: 0;}
 	}
-	header article.gnb a.menu_open.on {
-		&:after {width: 30px;transform: rotate(-45deg) translate(5px,-8px);}
-		&:before {width: 30px;transform: rotate(45deg) translate(4px,8px);}
-		span {opacity: 0;}
+	//header gnb
+	article.gnb nav {position: fixed;top: 48px;left: -100vw;width: 100vw;bottom: 0; background: #181817;transition: left 0.3s;overflow-y: scroll;z-index: 10;
+		&.on {left: 0;}
+		ul.sns_list {border-bottom:1px solid #2f2f2f;border-top:1px solid #2f2f2f;margin-bottom: 30px;
+			li {float: left;width: 25%;box-sizing: border-box;text-align: center;
+				a {display: block;padding: 15px 0;}
+				i {font-size: 20px;}
+			}
+			li+li {border-left: 1px solid #2f2f2f;}
+		}
 	}
+	article.gnb nav ul.menu_list>li {border-bottom: 1px solid #2f2f2f;position: relative;
+		>a {@include Montserrat(17px,#c4c4c4);padding: 10px 20px;display: block;}
+		&.more>a:before {content: '';background: url(../img/main/more.png) no-repeat; height:13px;width: 23px;display: block;position: absolute;right: 20px;top: 13px;transition: all 0.1s;}
+		&.more.on>a:before {transform: rotate(180deg);}
+		>a.red {color: #cb3a4b;}
+		ul {max-height: 0px;overflow: hidden;
+			li a {padding: 10px 20px ;display: block;color: #888}
+		}
+		&:nth-child(2) ul li a {letter-spacing: 1px;}
+		&.on ul {max-height: 100%;}
+	}
+}
+
+
+
+@media screen and (max-width:640px) {
+	header article.top_header ul.sns_list {display: none;}
+	header article.top_header form {display: none;}
+}
+@media screen and (min-width:641px) and (max-width:1024px) {}
+@media screen and (min-width:1025px) {
+	header article.gnb nav ul.sns_list {display: none;}
 }

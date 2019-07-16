@@ -16,12 +16,14 @@ $(document).ready(function() {
 			$(this).toggleClass('on');
 			$('nav').toggleClass('on'); 
 		}
+		$('header article.gnb nav ul.menu_list>li').removeClass('on');
     });
     
 	$('header article.gnb nav ul.menu_list>li>a').on('click', function(e) {
 		e.preventDefault();
 		$(this).parent().toggleClass('on');
 	});
+	
 	
 	
 	setImageSlide('#visual .image-slide');
@@ -34,12 +36,18 @@ $(document).ready(function() {
 		var timerId = null;
 		var timerSpeed = 3000;
 		var isTimerOn = true;
+		
+
 
 		if (isTimerOn === true) {
 			$(selector).find('div.control a.play').addClass('on');
 		} else {
 			$(selector).find('div.control a.play').removeClass('on');
 		}
+		
+		$(selector).find('ul.slide li').each(function(i) {
+			$(selector).find('.indicator').append('<li><a href="#">'+ (i + 1) +' 번 이미지</a></li>')
+		})
 		
 		setSlide(1)
 
@@ -70,15 +78,21 @@ $(document).ready(function() {
 			slidePrev = (n - 1) < 1 ? numSlide : n - 1;
 			slideNext = (n + 1) > numSlide ? 1 : n + 1;
 
-			$(selector).find('ul.slide li').css({'display':'none'})
+			$(selector).find('ul.slide li').css({'display':'none'});
+			$(selector).find('.indicator li').removeClass('on');
+			$(selector).find('.indicator li a').css({'width':'12px'})
 			
 			$(selector).find('ul.slide li:eq('+ (slideNow - 1) +')').css({'left':0,'display':'block'});
 			$(selector).find('ul.slide li:eq('+ (slidePrev - 1) +')').css({'left':'-100%','display':'block'});
 			$(selector).find('ul.slide li:eq('+ (slideNext - 1) +')').css({'left':'100%','display':'block'});
-			$(selector).find('.control span.num').text(slideNow);
+			$(selector).find('.indicator li:eq('+ (slideNow - 1) +')').addClass('on');
+			
+			$(selector).find('.indicator li.on a').stop(true).animate({'width': '100%'}, timerSpeed);
 			
 			if (isTimerOn === true) {
 				timerId = setTimeout(function() {setSlide(slideNext);}, timerSpeed);
+				
+				
 			}
 		}
 	}

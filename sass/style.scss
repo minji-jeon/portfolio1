@@ -1,0 +1,65 @@
+@mixin Montserrat($size,$color) {
+	font-family: 'Montserrat', sans-serif;letter-spacing: 1px;font-size: $size;color: $color;
+}
+@mixin Source($size,$color) {
+	font-family: 'Source Sans Pro', sans-serif;;letter-spacing: 1px;font-size: $size;color: $color;
+}
+
+//visual
+#visual .image-slide {position: relative;overflow: hidden;
+	.slide {height:450px;margin-bottom: 15px;
+		li {background: url(../img/main/m/visual01.jpg)no-repeat top center;height: 450px;width: 100%; position: absolute;left: 0;top: 0;
+			&:nth-child(2) {background-image: url(../img/main/m/visual02.jpg);}
+			&:nth-child(3) {background-image: url(../img/main/m/visual03.jpg);}
+			&:nth-child(4) {background-image: url(../img/main/m/visual04.jpg);
+				.visual_text p {color: #bebebe;}
+			}
+			&:nth-child(5) {background-image: url(../img/main/m/visual05.jpg);}
+			&:first-child .visual_text p:first-child {width: 100%;}
+			.visual_text {padding-top: 25px;text-align: center;width: 300px;margin: 0 auto;
+				p {font-size: 15px;line-height: 1.5;color: #303030;margin-bottom: 15px;
+					&:first-child {width: 65%;margin: 0 auto 15px;}
+					img {width: 100%;}
+				}
+			}
+		}
+	}
+	.indicator {margin: 0 auto 20px;width: 130px;
+		li {float: left;width: 12px;height: 12px;border-radius: 100px;overflow: hidden;background: #c7c7c7;position: relative;
+			+li {margin-left: 8px;}
+			a {display: block;text-indent: -9999px;width: 12px;height: 12px;border-radius: 100px;position: absolute;left: 0;top: 0; }
+			&.on {width: 50px;
+				a {background: #ffae76;}
+			}
+		}
+	}
+	.control {
+		div a {position: absolute;top: 35%;;
+			&.prev {left: 10px;}
+			&.next {right: 10px;}
+		}
+		div a i {font-size: 50px;color: #fff;}
+		div a span {position: absolute;text-indent: -9999px}
+		a.play {position: absolute;right: 10px;bottom: 10px;
+			i {font-size: 18px;width: 23px;line-height: 23px;border: 1px solid #d3d3d3;text-align: center;color: #b4b4b4;
+				&.fa-play {display: block;}
+				&.fa-pause {display: none;}
+			}
+			span {position: absolute;text-indent: -9999px}
+			&.on {
+				i.fa-play {display: none;}
+				i.fa-pause {display: block;}
+			}
+		}
+	}
+}
+
+
+/*@keyframes dot-line {
+	0% {
+		width: 10px;
+	}
+	100% {
+		width: 100%;
+	}
+}*/
