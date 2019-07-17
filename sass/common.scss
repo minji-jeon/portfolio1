@@ -52,13 +52,28 @@ header {border-top: 2px solid #890010; height: 48px; background:#181817;position
 	}
 }
 
-
+//footer
+footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
+	div.logo {display: none;}
+	div.foot_content {text-align: center;
+		aside a {margin-right: 4px;padding-left: 5px;font-size: 13px;color: #b2b2b2;word-break: keep-all;background: url(../img/main/foot_bar.jpg) no-repeat left center;
+			&:first-child {padding-left: 0;background: none;}
+		}
+		address p {padding-top: 10px;font-size: 13px;color: #8c8c8c;font-style: normal;
+			span {letter-spacing: 1px;}
+		}
+	}
+}
 
 @media screen and (max-width:640px) {
 	header article.top_header ul.sns_list {display: none;}
 	header article.top_header form {display: none;}
+	footer .foot_btn {display: none;}
 }
-@media screen and (min-width:641px) and (max-width:1024px) {}
+@media screen and (min-width:641px) and (max-width:1024px) {
+	header article.top_header ul.sns_list {display: none;}
+	header article.top_header form {display: none;}
+}
 @media screen and (min-width:1025px) {
 	header article.gnb nav ul.sns_list {display: none;}
 }
