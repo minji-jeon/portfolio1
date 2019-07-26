@@ -7,186 +7,216 @@
     <title>pascucci story</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/sub01.css">
+    <link rel="stylesheet" href="css/sub_story.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/ui_library_common.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <a href="#main" id="skip-nav">본문 바로가기</a>
-    <header>
-        <article class="top_header">
-            <div class="inner">
-                <h1 class="logo"><a href="index.html"><img src="img/main/header_logo.jpg" alt="파스쿠찌 로고"></a></h1>
-                <ul class="sns_list clear">
-                        <li><a href="#"><i class="fab fa-facebook-f"><span>페이스북</span></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"><span>트위터</span></i></a></li>
-                        <li><a href="#"><i class="fas fa-blog"><span>블로그</span></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"><span>인스타그램</span></i></a></li>
-                </ul>
-                <form class="H_Search">
-                    <label for="Search">통합검색</label>
-                    <div>
-                        <input type="search" id="Search">
-                        <a href="#"><i class="fas fa-search"></i></a>
+    <div class="wrap">
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <header>
+                <article class="top_header">
+                    <div class="inner">
+                        <h1 class="logo"><a href="index.html"><img src="img/main/header_logo.jpg" alt="파스쿠찌 로고"></a></h1>
+                        <ul class="sns_list clear">
+                            <li><a href="#"><i class="fab fa-facebook-f"><span>페이스북</span></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"><span>트위터</span></i></a></li>
+                            <li><a href="#"><i class="fas fa-blog"><span>블로그</span></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"><span>인스타그램</span></i></a></li>
+                        </ul>
+                        <form>
+                            <fieldset>
+                                <legend>통합검색</legend>
+                                <label for="Search">통합검색</label>
+                                <div>
+                                    <input type="search" id="Search">
+                                    <a href="#"><i class="fas fa-search"><span>검색버튼</span></i></a>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    
-                </form>
-            </div>
-        </article>
-        <article class="gnb">
-           <div class="inner">
-               <button><i class="fas fa-bars"></i></button>
-                <nav>
-                    <a href="story.html">CAFFE PASCUCCI</a>
-                    <a href="menu.html">MENU</a>
-                    <a href="event.html">EVENT&amp;TALK</a>
-                    <a href="store.html">STORE</a>
-                    <a href="customer.html">CUSTOMER</a>
-                    <a class="red" href="franchish.html">FRANCHISH</a>
-                </nav>
-           </div>
-        </article>
-    </header> <!-- header end -->
-    
-    <section id="visual">
-        <div class="inner">
-             <div class="visual_text">
-                <p class="R_49">About pascucci</p>
-                <p class="N_20">130년 정통 이탈리아 에스프레소 커피전문점 </p>
-            </div>
-        </div>
-    </section> <!-- visual end -->
-    
-    <main id="main">
-            <div class="inner_s">
-                <div class="text N_19">
-                    <h2 class="N_30">전통과 전통의 만남<br><span class="R_29">Caffe Pascucci</span></h2>
-                    <p class="N_17">1883년 에스프레스의 고향 이탈리아에<br>커피에 대한 열정이 넘치는 파스쿠찌 부자에 의해<br>카페 파스쿠찌의 역사가 시작되었습니다.</p>
+                </article>
+                <article class="gnb">
+                   <div class="inner">
+                       <a class="menu_open" href="#"><span>메뉴 열기/닫기</span></a>
+                        <nav>
+                            <ul class="sns_list clear">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i><br><span>페이스북</span></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i><br><span>트위터</span></a></li>
+                                <li><a href="#"><i class="fas fa-blog"></i><br><span>블로그</span></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i><br><span>인스타그램</span></a></li>
+                            </ul>
+                           <ul class="menu_list clear">
+                                   <li class="more">
+                                       <a href="story.html">CAFFE-PASCUCCI</a>
+                                       <ul>
+                                           <li><a href="#">전통과 전통의 만남</a></li>
+                                           <li><a href="#">한국파스쿠찌</a></li>
+                                           <li><a href="#">이탈리아파스쿠찌</a></li>
+                                           
+                                       </ul>
+                                   </li>
+                                   <li class="more">
+                                       <a href="#"">MENU</a>
+                                       <ul>
+                                           <li><a href="#">Coffee</a></li>
+                                           <li><a href="#">Beverage</a></li>
+                                           <li><a href="#">food</a></li>
+                                           <li><a href="#">Md</a></li>
+                                       </ul>
+                                   </li>
+                                   <li class="more">
+                                       <a href="#">EVENT&amp;TALK</a>
+                                       <ul>
+                                           <li><a href="#">진행중인 이벤트</a></li>
+                                           <li><a href="#">당첨자 발표</a></li>
+                                           <li><a href="#">파스쿠찌 Talk</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="#">STORE</a>
+                                   </li>
+                                   <li class="more">
+                                       <a href="customer.html">CUSTOMER</a>
+                                       <ul>
+                                           <li><a href="#">제휴안내</a></li>
+                                           <li><a href="#">자주하는질문</a></li>
+                                           <li><a href="#">1:1문의하기</a></li>
+                                           <li><a href="#">공지사항</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a class="red" href="customer.html">FRANCHISH</a>
+                                   </li>
+                           </ul>
+                        </nav>
+                   </div>
+                </article>
+            </header> <!-- header end -->
+        
+        <section id="visual">
+            <div class="inner">
+                <div class="visual_text">
+                    <p>About Pascucci</p>
+                    <p>130년 정통 이탈리아 에스프레소 커피전문점 </p>
                 </div>
-                <div class="deco">
-                    <img src="img/story/story_deco01.jpg" alt="">
-                </div>
             </div>
+        </section> <!-- visual end -->
+        
+        <main id="main">
+            <section id="scene02">
+                <div class="inner_s">
+                    <div class="img clear">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="text">
+                        <h2>전통과 전통의 만남<br><span>Caffe Pascucci</span></h2>
+                        <p>1883년 에스프레스의 고향 이탈리아에<br>커피에 대한 열정이 넘치는 파스쿠찌 부자에 의해<br>카페 파스쿠찌의 역사가 시작되었습니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene02 end -->
 
+            <section id="scene03">
+                <div class="inner_s">
+                    <div class="text">
+                        <h3>1883년, 파스쿠찌의 이야기가 시작되었습니다</h3>
+                        <p>에스프레소의 고향, 현대 커피의 발상지인 이탈리아에는 커피에 대한 열정이 넘치는<br>파스쿠찌 부자가 살고 있었습니다. 이들은 대를 이은 커피 연구를 통해 드디어 새로운<br>맛과 향을 가진 파스쿠찌만의 커피를 만들어 낼 수 있었습니다.<br>파스쿠찌 부자는 인근 몬테체리뇨네 지역을 거점으로 이들만의 커피를 전파하기<br>시작했습니다. 1946년 파스쿠찌는 장비를 이용하여 에스프레소를 추출하는 기법을<br>업계 최초로 도입 했고, 새로운 로스팅 기계 도입과 생산라인 구축으로 많은 양의<br>품질 원두를 생산할 수 있는 환경도 갖춥니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene03 end -->
+
+            <section id="scene04">
+                <div class="inner_s">
+                    <div class="text right">
+                        <h3>그후 130년간 계속 이어진 파스쿠찌의 노력은<br>이탈리아 정통 커피와 그 문화를 세계로 전파하는 글로벌 브랜드로 자라나게 됩니다</h3>
+                        <p>이탈리아에서 시작된 유럽의 커피문화는 미국뿐 아니라 전세계 여러 나라로 뻗어나가 지금 우리가<br>누리고 있는 커피 전문점 문화의 시초가 됩니다. 그리고, 파스쿠찌는 이탈리아 전통 커피 브랜드로<br>보다 이탈리아 본래 모습에 충실한 정통 에스프레소 전문점으로 20여개국, 40개 도시에 진출하게 됩니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene04 end -->
+
+            <section id="scene05">
+                <div class="inner_s">
+                    <div class="text">
+                        <p>그리고 2001년,<br>파스쿠찌는 한국의 SPC를 만나게 됩니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene05 end -->
+
+            <section id="scene06">
+                <div class="inner_s">
+                    <div class="text">
+                        <h3>전통과 장인정신, 노하우. 통하는 것이 참 많은 파트너였습니다.</h3>
+                        <p>1945년 작은 빵집에서 시작된 SPC도 장인의 집념과 고집으로 제과 제빵을 넘어  한국의<br>식품 산업과 문화를 이끈 전통있는 회사였습니다.<br>한국 식품 산업과 프랜차이즈의 형태를 잘 알고 종합식품회사로 프랑스 등 선진 디저트<br>기술도 확보한 실력 있는 한국 종합 식품기업, 그리고 이탈리아 정통 에스프레소와<br>커피 문화를 가진 오리지널 커피 전문 브랜드. 그래서 이 둘의 만남은 어쩌면 시작부터<br>좋은 시너지를 내는 최고의 파트너십이 보장되어 있었을지 모릅니다.</p>
+                    </div>
+                </div>
+                
+            </section><!-- scene06 end -->
+
+            <section id="scene07">
+                <div class="inner_s">
+                    <div class="text right">
+                        <h3>전통을 담은 한잔의 커피,<br>전통을 이어온 따뜻한 디저트&amp;푸드 보다 완전한 서비스를 위해</h3>
+                        <p>1945년 작은 빵집에서 시작된 SPC도 장인의 집념과 고집으로 제과 제빵을 넘어  한국의<br>식품 산업과 문화를 이끈 전통있는 회사였습니다.<br>한국 식품 산업과 프랜차이즈의 형태를 잘 알고 종합식품회사로 프랑스 등 선진 디저트<br>기술도 확보한 실력 있는 한국 종합 식품기업, 그리고 이탈리아 정통 에스프레소와<br>커피 문화를 가진 오리지널 커피 전문 브랜드. 그래서 이 둘의 만남은 어쩌면 시작부터<br>좋은 시너지를 내는 최고의 파트너십이 보장되어 있었을지 모릅니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene07 end -->
+
+            <section id="scene08">
+                <div class="inner_s">
+                    <div class="text">
+                        <h3>130 ♥ 70, 14년, 성공적!</h3>
+                        <p>이제 한국 파스쿠찌가 14년을 넘기며 한국 커피 시장 내에서 순항 중입니다.<br>전국 400개 이상의 매장과 꾸준한 매출 신장은 파스쿠찌가<br>한국 커피 전문점 문화에 명실상부한 일원이며, 리딩 브랜드임을 증명합니다. <br>이탈리아 커피 130년 전통과 한국 식품문화 70년의 전통이 만나, <br>새로운 커피&amp;디저트&amp;푸드를 제공해드리겠다는 우리의 목표는 이만하면 성공적이지 않은가요?</p>
+                    </div>
+                </div>
+
+            </section><!-- scene08 end -->
+
+            <section id="scene09">
+                <div class="inner_s">
+                    <div class="text right">
+                        <h3>다음 15년, 150년을 위해...한국 파스쿠찌</h3>
+                        <p>국내 고객의 사랑에 힘입어 파스쿠찌는 한국 시장에 성공적으로 안착했습니다.<br>이제는 파스쿠찌를 사랑해주는 고객분들께 정통 이탈리아 에스프레소를<br>한국에 소개하는 것을 넘어, 한국 파스쿠찌만의 독창성을 가진 커피 전문점이 되고자 합니다.<br>그래서 한국 시장에서 더 오래도록 사랑받는 브랜드가 되도록 하겠습니다.</p>
+                    </div>
+                </div>
+            </section><!-- scene09 end -->
         </main><!-- main end -->
 
-        <section id="scene03">
-            <div class="inner_s">
-                <div class="text">
-                    <h3>1883년, 파스쿠찌의 이야기가 시작되었습니다</h3>
-                    <p>에스프레소의 고향, 현대 커피의 발상지인 이탈리아에는 커피에 대한 열정이 넘치는<br>파스쿠찌 부자가 살고 있었습니다. 이들은 대를 이은 커피 연구를 통해 드디어 새로운<br>맛과 향을 가진 파스쿠찌만의 커피를 만들어 낼 수 있었습니다.<br>파스쿠찌 부자는 인근 몬테체리뇨네 지역을 거점으로 이들만의 커피를 전파하기<br>시작했습니다. 1946년 파스쿠찌는 장비를 이용하여 에스프레소를 추출하는 기법을<br>업계 최초로 도입 했고, 새로운 로스팅 기계 도입과 생산라인 구축으로 많은 양의<br>품질 원두를 생산할 수 있는 환경도 갖춥니다.</p>
-                </div>
-                <div class="deco">
-                    <img src="img/story/story_deco02.jpg" alt="">
-                    <img src="img/story/story_deco03.png" alt="">
-                </div>
-            </div>
-        </section><!-- scene03 end -->
-
-        <section id="scene04">
-            <div class="inner_s">
-                <div class="text right">
-                    <h3>그후 130년간 계속 이어진 파스쿠찌의 노력은<br>이탈리아 정통 커피와 그 문화를 세계로 전파하는 글로벌 브랜드로 자라나게 됩니다</h3>
-                    <p>이탈리아에서 시작된 유럽의 커피문화는 미국뿐 아니라 전세계 여러 나라로 뻗어나가 지금 우리가<br>누리고 있는 커피 전문점 문화의 시초가 됩니다. 그리고, 파스쿠찌는 이탈리아 전통 커피 브랜드로<br>보다 이탈리아 본래 모습에 충실한 정통 에스프레소 전문점으로 20여개국, 40개 도시에 진출하게 됩니다.</p>
-                </div>
-                <div class="deco">
-                    <img src="img/story/m/story_deco04.png" alt="">
+        <footer id="footer">
+            <div class="inner clear">
+                <div class="logo"><img src="img/main/foot_logo.jpg" alt=""></div>
+                <div class="foot_content">
+                    <aside class="foot_link clear">
+                        <a href="#">해피포인트</a>
+                        <a class="red" href="#">개인정보 처리방침</a>
+                        <a href="#">영상정보처리기기운영 &#46; 관리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">윤리신고센터</a>
+                        <a href="#">거래희망사전등록</a>
+                    </aside>
+                    <address>
+                        <p>서울시 서초구 양재동 <span>11-149</span>번지 <span>FAX.0505-076-0210</span> 고객상담센터 <span>080-731-2027</span></p>
+                        <p>COPYRIGHT 2019 THE CAFFEE PASCUCCI</p>
+                    </address>
                 </div>
             </div>
-        </section><!-- scene04 end -->
-
-        <section id="scene05">
-            <div class="inner_s">
-                <div class="text">
-                    <p>그리고 2001년,<br>파스쿠찌는 한국의 SPC를 만나게 됩니다.</p>
-                </div>
-            </div>
-        </section><!-- scene05 end -->
-
-        <section id="scene06">
-            <div class="inner_s">
-                <div class="text">
-                    <h3>전통과 장인정신, 노하우. 통하는 것이 참 많은 파트너였습니다.</h3>
-                    <p>1945년 작은 빵집에서 시작된 SPC도 장인의 집념과 고집으로 제과 제빵을 넘어  한국의<br>식품 산업과 문화를 이끈 전통있는 회사였습니다.<br>한국 식품 산업과 프랜차이즈의 형태를 잘 알고 종합식품회사로 프랑스 등 선진 디저트<br>기술도 확보한 실력 있는 한국 종합 식품기업, 그리고 이탈리아 정통 에스프레소와<br>커피 문화를 가진 오리지널 커피 전문 브랜드. 그래서 이 둘의 만남은 어쩌면 시작부터<br>좋은 시너지를 내는 최고의 파트너십이 보장되어 있었을지 모릅니다.</p>
-                </div>
-                <div class="deco">
-                    <img src="img/story/story_deco04.png" alt="">
-                    <img src="img/story/story_deco05.png" alt="">
-                </div>
-                <div class="deco_m">
-                    <img src="img/story/m/story_deco03.png" alt="">
-                </div>
-            </div>
-            
-        </section><!-- scene06 end -->
-
-        <section id="scene07">
-            <div class="inner_s">
-                <div class="text right">
-                    <h3>전통을 담은 한잔의 커피,<br>전통을 이어온 따뜻한 디저트&amp;푸드 보다 완전한 서비스를 위해</h3>
-                    <p>1945년 작은 빵집에서 시작된 SPC도 장인의 집념과 고집으로 제과 제빵을 넘어  한국의<br>식품 산업과 문화를 이끈 전통있는 회사였습니다.<br>한국 식품 산업과 프랜차이즈의 형태를 잘 알고 종합식품회사로 프랑스 등 선진 디저트<br>기술도 확보한 실력 있는 한국 종합 식품기업, 그리고 이탈리아 정통 에스프레소와<br>커피 문화를 가진 오리지널 커피 전문 브랜드. 그래서 이 둘의 만남은 어쩌면 시작부터<br>좋은 시너지를 내는 최고의 파트너십이 보장되어 있었을지 모릅니다.</p>
-                </div>
-            </div>
-        </section><!-- scene07 end -->
-
-        <section id="scene08">
-            <div class="inner_s">
-                <div class="text">
-                    <h3>130 ♥ 70, 14년, 성공적!</h3>
-                    <p>이제 한국 파스쿠찌가 14년을 넘기며 한국 커피 시장 내에서 순항 중입니다.<br>전국 400개 이상의 매장과 꾸준한 매출 신장은 파스쿠찌가<br>한국 커피 전문점 문화에 명실상부한 일원이며, 리딩 브랜드임을 증명합니다. <br>이탈리아 커피 130년 전통과 한국 식품문화 70년의 전통이 만나, <br>새로운 커피&amp;디저트&amp;푸드를 제공해드리겠다는 우리의 목표는 이만하면 성공적이지 않은가요?</p>
-                </div>
-            </div>
-
-        </section><!-- scene08 end -->
-
-        <section id="scene09">
-            <div class="inner_s">
-                <div class="text right">
-                    <h3>다음 15년, 150년을 위해...한국 파스쿠찌</h3>
-                    <p>국내 고객의 사랑에 힘입어 파스쿠찌는 한국 시장에 성공적으로 안착했습니다.<br>이제는 파스쿠찌를 사랑해주는 고객분들께 정통 이탈리아 에스프레소를<br>한국에 소개하는 것을 넘어, 한국 파스쿠찌만의 독창성을 가진 커피 전문점이 되고자 합니다.<br>그래서 한국 시장에서 더 오래도록 사랑받는 브랜드가 되도록 하겠습니다.</p>
-                </div>
-                <div class="deco">
-                    <img src="img/story/story_deco06.png" alt="">
-                </div>
-            </div>
-        </section><!-- scene09 end -->
-    
-    <footer id="footer">
-        <div class="inner clear">
-            <div class="logo"><img src="img/main/foot_logo.jpg" alt=""></div>
-            <div class="foot_content">
-                <aside class="foot_link clear">
-                    <a href="#">해피포인트</a>
-                    <a class="red" href="#">개인정보 처리방침</a>
-                    <a href="#">영상정보처리기기운영 &#46; 관리방침</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">윤리신고센터</a>
-                    <a href="#">거래희망사전등록</a>
-                </aside>
-				<address>
-					<p>서울시 서초구 양재동 <span>11-149</span>번지 <span>FAX.0505-076-0210</span> 고객상담센터 <span>080-731-2027</span></p>
-					<p>COPYRIGHT 2019 THE CAFFEE PASCUCCI</p>
-				</address>
-            </div>
-        </div>
-    </footer><!-- footer end -->
-    
+        </footer><!-- footer end -->
+    </div>
 <script>
     
-    
-var scrollTop = 0;
-scrollTop = $(document).scrollTop();
-    
+
 $(window).scroll(function() {
-	scrollTop = $(document).scrollTop();
-    checkShow('.deco img');
+
+    checkShow('#main .img');
     checkShow('.deco_m img');
 //    checkShow('main .inner');
 });
 function checkShow(selector) {
+    var scrollTop = $(document).scrollTop();
     $(selector).each(function() {
         var $selector = $(this);
 

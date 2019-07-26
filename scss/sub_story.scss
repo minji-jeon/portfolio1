@@ -1,0 +1,40 @@
+@mixin Raleway($size,$color) {
+	font-family: 'Raleway', sans-serif;letter-spacing: 1px;font-size: $size;color: $color;
+}
+@mixin Source($size,$color) {
+	font-family: 'Source Sans Pro', sans-serif;;letter-spacing: 1px;font-size: $size;color: $color;
+}
+
+// vusial
+#visual {height: 320px;background: url(../img/story/m/visual_bg.jpg) repeat-x center bottom;margin-bottom: 30px;
+	.visual_text {padding-top: 150px;text-align: center;
+		p:first-child {@include Raleway(35px,#3c3938);font-weight:800;margin-bottom: 5px;font-stretch: narrower}
+		p:last-child {font-size: 17px;color: #3a3a3a;}
+	}
+}
+
+// main
+main {padding: 0 15px;color:#4d4d4d;
+
+	//common
+	.img {width: 240px;height: 259px;margin-bottom: 15px;
+		span {float: left;width:25%;height: 100%;overflow: hidden;
+			&:after {content:'';display:block;background: url(../img/story/story_img01.jpg) no-repeat left top ;background-size: 240px;height: 100%;width: 100%;transform: translateX(-101%);transition: transform 0.5s;}
+			&:nth-child(2):after {background-position: 34% top;}
+			&:nth-child(3):after {background-position: 67% top;}
+			&:nth-child(4):after {background-position: right top;}
+		}
+		&.on span:after {transform: translateX(0)}
+	}
+
+
+	// secne02
+	#scene02 {/*background: url(../img/story/story_img01.jpg) no-repeat left top 0/240px;*/margin-bottom: 50px;
+		
+		h2 {font-size: 30px;color: #303030;font-weight: 500;line-height:1;margin-bottom: 25px;
+			span {@include Raleway(20px,#656565);font-weight:300;}
+		}
+		p {font-size: 15px;line-height: 1.5;}
+
+	}
+}

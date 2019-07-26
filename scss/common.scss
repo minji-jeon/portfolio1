@@ -1,8 +1,8 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,500|Noto+Sans+KR|Source+Sans+Pro:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700,800|Noto+Sans+KR|Source+Sans+Pro:900&display=swap');
 
-@mixin Montserrat($size,$color) {
-	font-family: 'Montserrat', sans-serif;letter-spacing: 1px;font-size: $size;color: $color;
+@mixin Raleway($size,$color) {
+	font-family: 'Raleway', sans-serif;letter-spacing: 1px;font-size: $size;color: $color;
 }
 @mixin Source($size,$color) {
 	font-family: 'Source Sans Pro', sans-serif;;letter-spacing: 1px;font-size: $size;color: $color;
@@ -10,7 +10,7 @@
 
 
 //common
-body {font-family: 'Noto Sans KR', sans-serif;font-size: 15px;letter-spacing: -1px;}
+body { font-family: 'Noto Sans KR', sans-serif;font-size: 15px;letter-spacing: -1px;}
 #skip-nav {position: fixed; background: #000;left: 20px;top: -40px;}
 #skip-nav:focus {top: 0;z-index: 999}
 
@@ -58,7 +58,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 			}
 		}
 		article.gnb nav ul.menu_list>li {border-bottom: 1px solid #2f2f2f;position: relative;
-			>a {@include Montserrat(17px,#c4c4c4);padding: 10px 20px;display: block;}
+			>a {@include Raleway(17px,#c4c4c4);padding: 10px 20px;display: block;}
 			&.more>a:before {content: '';background: url(../img/main/more.png) no-repeat; height:13px;width: 23px;display: block;position: absolute;right: 30px;top: 13px;transition: all 0.1s;}
 			&.more.on>a:before {transform: rotate(180deg);}
 			>a.red {color: #cb3a4b;}
@@ -113,7 +113,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 	.inner_s {width: 1100px;margin: 0 auto;}
 	
 //	header
-	header {border-top: 5px solid #950032;position: fixed;left: 0;top: 0;width: 100%;z-index: 9;
+	header {border-top: 5px solid #950032;position: fixed;left: 0;top: 0;width: 100%;z-index: 9;transition:top 0.4s;
 		article.top_header {background:#181817;
 			.inner {position: relative;height: 115px;
 				h1.logo {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);
@@ -135,7 +135,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 					}
 				}
 				form {position: absolute;right: 0;top: 50%;transform: translateY(-50%);
-					label {position: absolute;left: -9999px;}
+					label,legend {position: absolute;left: -9999px;}
 					div {position: relative;
 						input {width: 200px;height: 37px;border: solid 0.7px #555555;box-sizing: border-box;padding: 0 5px 0 43px;background: none;border-radius: 100px;color: #fff;}
 						a {position: absolute;left: 13px;top: 9px;
@@ -152,7 +152,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 		article.gnb {border-bottom: 1px solid #b2b2b2;background: #fff;
 			ul.menu_list>li {float: left;position: relative;
 				+li {margin-left: 140px;}
-				>a {@include Montserrat(13px,#010101);line-height: 55px;font-weight: 800;display: inline-block;position: relative;
+				>a {@include Raleway(13px,#010101);line-height: 55px;font-weight: 800;display: inline-block;position: relative;
 					&:after {content: '';display: block;height: 2px;background: #950032;position: absolute;left: 50%;transform: translateX(-50%);bottom: 13px;border-radius: 4px;width: 0;transition: width 0.5s;}
 					&:hover:after {width: 100%;}
 				}
@@ -163,7 +163,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 					}
 					&.on {max-height: 210px;}
 				}
-				&:nth-child(2) ul li a {@include Montserrat(15px,#2a2a2a);
+				&:nth-child(2) ul li a {@include Raleway(15px,#2a2a2a);
 					&:hover {color: #6d1835;}
 				}
 			}
@@ -179,7 +179,7 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 				img {vertical-align: top;}
 			}
 		}
-		.logo, .foot_content, {float: left;}
+		.logo, .foot_content {float: left;}
 		.foot_btn {float: right;
 			.select ul.going {height: inherit;}
 		}
@@ -188,5 +188,4 @@ footer {border-top: 2px solid #950032;background: #1d1d1d;padding: 30px 10px;
 			}
 		}
 	}
-	
 }

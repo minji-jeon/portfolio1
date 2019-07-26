@@ -5,15 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>caffee pascucci</title>
-    <link rel="stylesheet" href="sass/reset.css">
-    <link rel="stylesheet" href="sass/common.css">
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/ui_library_common.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </head>
+
 <body>
+	<div class="wrap">
         <a href="#main" id="skip-nav">본문 바로가기</a>
         <header>
             <article class="top_header">
@@ -26,11 +28,14 @@
                         <li><a href="#"><i class="fab fa-instagram"><span>인스타그램</span></i></a></li>
                     </ul>
                     <form>
-                        <label for="Search">통합검색</label>
-                        <div>
-                            <input type="search" id="Search">
-                            <a href="#"><i class="fas fa-search"><span>검색버튼</span></i></a>
-                        </div>
+						<fieldset>
+							<legend>통합검색</legend>
+							<label for="Search">통합검색</label>
+							<div>
+								<input type="search" id="Search">
+								<a href="#"><i class="fas fa-search"><span>검색버튼</span></i></a>
+							</div>
+						</fieldset>
                     </form>
                 </div>
             </article>
@@ -46,7 +51,7 @@
 						</ul>
                        <ul class="menu_list clear">
                        		<li class="more">
-                       			<a href="story.html" data-hover="CAFFE-PASCUCCI">CAFFE-PASCUCCI</a>
+                       			<a href="story.html">CAFFE-PASCUCCI</a>
                        			<ul>
                        				<li><a href="#">전통과 전통의 만남</a></li>
                        				<li><a href="#">한국파스쿠찌</a></li>
@@ -55,7 +60,7 @@
                        			</ul>
                        		</li>
                        		<li class="more">
-                       			<a href="menu.html" data-hover="MENU">MENU</a>
+                       			<a href="#"">MENU</a>
                        			<ul>
                        				<li><a href="#">Coffee</a></li>
                        				<li><a href="#">Beverage</a></li>
@@ -64,7 +69,7 @@
                        			</ul>
                        		</li>
                        		<li class="more">
-                       			<a href="event.html" data-hover="EVENT&TALK">EVENT&amp;TALK</a>
+                       			<a href="#">EVENT&amp;TALK</a>
                        			<ul>
                        				<li><a href="#">진행중인 이벤트</a></li>
                        				<li><a href="#">당첨자 발표</a></li>
@@ -72,10 +77,10 @@
                        			</ul>
                        		</li>
                        		<li>
-                       			<a href="store.html" data-hover="STORE">STORE</a>
+                       			<a href="#">STORE</a>
                        		</li>
                        		<li class="more">
-                       			<a href="customer.html" data-hover="CUSTOMER">CUSTOMER</a>
+                       			<a href="customer.html">CUSTOMER</a>
                        			<ul>
                        				<li><a href="#">제휴안내</a></li>
                        				<li><a href="#">자주하는질문</a></li>
@@ -94,61 +99,69 @@
         
         <section id="visual">
             <div class="image-slide">
-                <div class="inner">
-                    <ul class="slide">
-                    	<li>
-                    		<a href="#">
+				<ul class="slide">
+					<li>
+						<a href="#">
+							<div class="inner">
 								<div class="visual_text">
 									<p><img src="img/main/main_text01.png" alt="cold Brew"></p>
 									<p>파스쿠찌의 콜드브루는 슬로우 로스팅 원두로 만들어집니다</p>
 								</div>
-                   			</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">
-                    			<div class="visual_text">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="inner">
+								<div class="visual_text">
 									<p><img src="img/main/main_text02.png" alt="granita"></p>
 									<p class="N_17">올 여름파스쿠찌 트로피칼그라니따로<br>무더워를시원하게날려보세요</p>
 								</div>
-							</a>
-                    	</li>
-                    	<li>
-							<a href="#">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="inner">
 								<div class="visual_text">
-									<p><img src="img/main/main_text03.png" alt="snowy hills"></p>
+									<p><img src="img/main/	main_text03.png" alt="snowy hills"></p>
 									<p class="N_17">크림 덮인 빙산을 파먹고 떠먹는 재미</p>
 								</div>
-							</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">
-                    			<div class="visual_text">
-									<p><img src="img/main/main_text04.png" alt="red bean granita"></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="inner">
+								<div class="visual_text">
+									<p><img src="img/main/	main_text04.png" alt="red bean granita"></p>
 									<p class="N_17">다시돌아온 파스쿠찌 인기 그라니따를 지금 만나보세요  </p>
 								</div>
-							</a>
-                    	</li>
-                    	<li>
-                    		<a href="#">
-                    			<div class="visual_text">
-									<p><img src="img/main/main_text05.png" alt="berry special"></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="inner">
+								<div class="visual_text">
+									<p><img src="img/main/	main_text05.png" alt="berry special"></p>
 									<p class="N_17">달콤한 딸기 시즌 한정 음료를 지금 만나보세요</p>
 								</div>
-							</a>
-                    	</li>
-                    </ul>
-                    <ul class="indicator clear">
-                    	
-                    </ul>
-					<div class="control">
-						<div>
-							<a href="#" class="prev"><i class="fas fa-angle-left"><span>이전 이미지</span></i></a>
-							<a href="#" class="next"><i class="fas fa-angle-right"><span>다음 이미지</span></i></a>
-						</div>
-						<a href="#" class="play"><i class="fas fa-pause"><span>정지</span></i><i class="fas fa-play"><span>플레이</span></i></a>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="indicator clear">
+					
+				</ul>
+				<div class="control">
+					<div>
+						<a href="#" class="prev"><i class="fas fa-angle-left"><span>이전 이미지</span></i></a>
+						<a href="#" class="next"><i class="fas fa-angle-right"><span>다음 이미지</span></i></a>
 					</div>
-                </div>
-            </div>
+					<a href="#" class="play"><i class="fas fa-pause"><span>정지</span></i><i class="fas fa-play"><span>플레이</span></i></a>
+				</div>
+			</div>
         </section>  <!--visual end -->
         
         <main id="main">
@@ -169,7 +182,7 @@
         
            <section id="menu">
 				<div class="inner_s">
-					<h2 class="H_45">PASCUCCI MENU</h2>
+					<h2>PASCUCCI MENU</h2>
 					<ul class="menu_img clear">
 						<li class="m_long">
 						   <a href="#">
@@ -218,7 +231,7 @@
 			</section> <!-- menu end -->
 
 		    <section id="sns">
-				<h2 class="H_45">PASCUCCI SNS</h2>
+				<h2>PASCUCCI SNS</h2>
 				<ul class="sns_list02 clear">
 					<li><a href="#"><i class="fab fa-facebook-f"><span>페이스북</span></i></a></li>
 					<li><a href="#"><i class="fab fa-twitter"><span>트위터</span></i></a></li>
@@ -313,11 +326,17 @@
 					<article>
 						<h3 class="N_23">매장찾기</h3>
 						<p class="btn_text">잠깐의 휴식이 필요하다면?<br>나와 가까운 파스쿠찌를 찾아보세요!</p>
-						<div class="store_form">
-							<label for="store_Search">매장검색</label>
-							<input type="Search" placeholder="매장명 또는 주소를 입력하세요" id="store_Search">
-							<a href="#"><i class="fas fa-search"><span>검색</span></i></a>
-						</div>
+						<form>
+							<fieldset>
+								<div class="store_form">
+									<legend>매장찾기 검색</legend>
+									<label for="store_Search">매장검색</label>
+									<input type="Search" placeholder="매장명 또는 주소를 입력하세요" id="store_Search">
+									<a href="#"><i class="fas fa-search"><span>검색</span></i></a>
+								</div>
+							</fieldset>
+						</form>
+
 					</article>
 					<article>
 					   <a href="customer.html">
@@ -367,7 +386,7 @@
                 </div>
             </div>
         </footer><!-- footer end -->
-
+	</div>
 <script>
     
 $('#sns ul.sns_list02 li').each(function(i) {
@@ -380,12 +399,9 @@ $('#sns .inner_s .banner_slide li').each(function(i) {
 })
 	
 	
-var scrollTop = 0;
-scrollTop = $(document).scrollTop();
+
     
 $(window).scroll(function() {
-	scrollTop = $(document).scrollTop();
-
     checkShow('section h2');
     checkShow('main .inner');
     checkShow('#menu ul.menu_img li a');
@@ -396,6 +412,8 @@ $(window).scroll(function() {
 });
     
 function checkShow(selector) {
+	var scrollTop = $(document).scrollTop();
+
     $(selector).each(function() {
         var $selector = $(this);
 
